@@ -24,9 +24,9 @@
 
     <!-- DESKTOP MENU -->
     <nav class="mainNav wrapper">
-        
+
         <ul class="mainMenu" data-aos="fade-down" data-aos-duration="700">
-            <li><a href="#home" >Home</a></li>
+            <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
@@ -35,7 +35,7 @@
     </nav>
     <!-- /DESKTOP MENU -->
 
-    
+
     <!-- MOBILE MENU (screens 768px and below) -->
     <nav class="mobileMenu">
         <label for="toggle">
@@ -78,10 +78,16 @@
                     <div class="aboutText">
                         <h3>About</h3>
                         <p>I'm a front-end developer from Toronto and Ottawa with a history of working in Agile team
-                            environments. My background as a Product Manager helps me put myself in the user's shoes. My previous experience as a financial planner gives me sense of empathy and compassion for understanding the needs of the end user. I find excitement in getting deep into the logic of an application, similar to helping a client navigate difficult financial decisions!
+                            environments. My background as a Product Manager helps me put myself in the user's shoes. My
+                            previous experience as a financial planner gives me sense of empathy and compassion for
+                            understanding the needs of the end user. I find excitement in getting deep into the logic of
+                            an application, similar to helping a client navigate difficult financial decisions!
                         </p>
-                        <p>When I'm not hunched over my laptop, you can find me exploring parts of the city, planning my next camping trip or attempting to swing my golf clubs. I'm a fan of stand-up comedy, cats, and football (not all three at the same time).</p>
-                        <a href="./assets/Raid-Naji-Resume.pdf" download role="button" class="button"><i class="fas fa-download"></i>View resume</a>
+                        <p>When I'm not hunched over my laptop, you can find me exploring parts of the city, planning my
+                            next camping trip or attempting to swing my golf clubs. I'm a fan of stand-up comedy, cats,
+                            and football (not all three at the same time). Je parle français, aussi!</p>
+                        <a href="./assets/Raid-Naji-Resume.pdf" download role="button" class="button"><i
+                                class="fas fa-download"></i>View resume</a>
                     </div>
                 </div>
             </div>
@@ -171,7 +177,8 @@
                             <span class="divide">|</span>
                             Rest API
                         </p>
-                        <p>A popular casino game with a Pokémon twist. This app handles a wide range of logic needed for the intricacies of the game. Created using the PokeAPI and Deck of Cards API.</p>
+                        <p>A popular casino game with a Pokémon twist. This app handles a wide range of logic needed for
+                            the intricacies of the game. Created using the PokeAPI and Deck of Cards API.</p>
 
                         <div class="links">
                             <a href="https://raid-sam.github.io/movie-picker/" target="_blank">Website</a>
@@ -195,7 +202,8 @@
                             <span class="divide">|</span>
                             Firebase
                         </p>
-                        <p>A simple calculator that takes in your household expenses and determines how to split them between you and your partner.</p>
+                        <p>A simple calculator that takes in your household expenses and determines how to split them
+                            between you and your partner.</p>
                         <div class="links">
                             <a href="https://expense-splitting-calculator.netlify.app/" target="_blank">Website</a>
                             <span class="divide">|</span>
@@ -209,11 +217,48 @@
         <!-- /PORTFOLIO -->
 
         <!-- CONTACT -->
-        <div class="section" id="contact">
-            <div class="">
-                <h3>Get In Touch</h3>
+        <section class="contact" id="contact">
+            <div class="wrapper" data-aos="fade-up" data-aos-duration="1000">
+                <h3>Contact</h3>
+                <div class="textContainer">
+                    <div class="contactMessage">
+                        <p>I'd love to connect with you! Let's have a chat. We can talk about my projects, wether you
+                            should contrinute to your RRSP or TFSA, or who the Raptors should trade for this year. You
+                            can send me a message here or find me on social media.</p>
+                        <ul class="socialIcons">
+                            <li><a href="mailto: naji.raid@gmail.com" aria-label="Send email to Raid Naji"><i
+                                        class="fas fa-envelope-square"></i></a></li>
+
+                            <li><a href="https://twitter.com/raidnaji"
+                                    aria-label="A link to to Raid's Twitter profile"><i
+                                        class="fab fa-twitter-square"></i></a></li>
+                            <li><a href="https://github.com/raidnaji"
+                                    aria-label="A link to to Raid's GitHub repository"><i
+                                        class="fab fa-github-square"></i></a></li>
+
+                            <li><a href="https://www.linkedin.com/in/raid-naji/"
+                                    aria-label="A link to to Raid's LinkedIn profile"><i
+                                        class="fab fa-linkedin"></i></a></li>
+
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="formContainer">
+                    <form action="https://formspree.io/f/xdoygyol" method="POST">
+                        <label for="name" class="srOnly">Your Name</label>
+                        <input type="text" name="name" id="name" placeholder="Name" required>
+                        <label for="email" class="srOnly">Your Email</label>
+                        <input type="email" name="_replyto" id="email" placeholder="Email" required>
+                        <label for="message" class="srOnly">Your Message</label>
+                        <textarea name="message" id="message" cols="30" rows="7" placeholder="Message"
+                            required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+
             </div>
-        </div>
+        </section>
         <!-- /CONTACT -->
 
     </main>
