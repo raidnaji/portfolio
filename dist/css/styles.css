@@ -731,13 +731,14 @@ ul {
     justify-content: flex-end;
     align-items: center;
   }
-  .aboutImage {
+  .aboutContainer .aboutImage {
     min-width: auto;
     width: 100%;
+    margin: 0;
   }
-  .aboutImage img {
-    width: 200px;
-    height: 200px;
+  .aboutContainer .aboutImage img {
+    width: 240px;
+    height: 240px;
     object-fit: cover;
     border-radius: 50%;
     margin: 0 auto;
