@@ -1,0 +1,33 @@
+html {
+    font-size: 125%; /* 20px */ 
+}
+
+body {
+    font-family: $mainFont;
+    color: $primaryColor;
+}
+
+h2 {
+    size: 4rem;
+}
+
+h3 {
+    font-size: 3rem;
+    font-family: $titleFont;
+}
+
+.wrapper {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+

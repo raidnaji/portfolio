@@ -1,0 +1,188 @@
+nav.mainNav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: $lightBlue;
+    height: 10vh;
+    position: fixed;
+    min-width: 100vw;
+    padding: 1rem 0;
+    z-index: 10;
+    // border: 2px solid red;
+}
+
+
+nav.mainNav ul {
+    display: flex;
+    list-style-type: none;
+
+    li a {
+        @include fontStyles(0.9rem, $primaryColor, 700, $mainFont);
+        padding: 1rem;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0.25rem;
+        position: relative;
+        text-decoration: none;
+        &:hover,
+        &:focus {
+            transform: scale(1.1);
+            transition-duration: 0.5s;
+            opacity: 70%;
+        }
+    }
+
+}
+
+
+
+nav.mobileMenu {
+  background: $lightBlue;
+  position: fixed;
+  z-index: 20;
+  width: 100%;
+  height: 430px;
+  height: 10vh;
+
+  ul {
+    font-size: 2rem;
+    background-color: $lightBlue;
+    opacity: 0;
+    margin-top: 60px;
+  }
+
+  li {
+    a {
+      display: inline-block;
+      color: $mistyBlue;
+      font-weight: 500;
+      font-size: 10rem;
+      font-size: 2rem;
+      padding: 30px;
+      width: 100%;
+      text-align: right;
+    }
+    
+  }
+
+}
+
+
+
+
+input[type="checkbox"]:checked + ul {
+  opacity: 1;
+}
+
+input[type="checkbox"],
+label[for="toggle"], nav.mobileMenu {
+    display: none;
+}
+
+label[for="toggle"] {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+  color: $mistyBlue;
+  font-size: 2.1rem;
+}
+
+
+input[type="checkbox"] {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 4rem;
+    height: 4rem;
+    
+    opacity: 0;
+}
+
+
+/*!
+ * Hamburgers
+ * All code below from: 
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+.hamburger {
+  padding: 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: $mistyBlue;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible; }
+  .hamburger:hover {
+    opacity: 0.7; }
+  .hamburger.is-active:hover {
+    opacity: 0.7; }
+  .hamburger.is-active .hamburger-inner,
+  .hamburger.is-active .hamburger-inner::before,
+  .hamburger.is-active .hamburger-inner::after {
+    background-color: $blueGrotto; }
+
+.hamburger-box {
+  width: 40px;
+  height: 24px;
+  display: inline-block;
+  position: relative; }
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px; }
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 40px;
+    height: 4px;
+    background-color: $mistyBlue;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease; }
+  .hamburger-inner::before, .hamburger-inner::after {
+    content: "";
+    display: block; }
+  .hamburger-inner::before {
+    top: -10px; }
+  .hamburger-inner::after {
+    bottom: -10px; }
+
+    /*
+   * Collapse
+   */
+.hamburger--collapse .hamburger-inner {
+  top: auto;
+  bottom: 0;
+  transition-duration: 0.13s;
+  transition-delay: 0.13s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  .hamburger--collapse .hamburger-inner::after {
+    top: -20px;
+    transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear; }
+  .hamburger--collapse .hamburger-inner::before {
+    transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+
+.hamburger--collapse.is-active .hamburger-inner {
+  transform: translate3d(0, -10px, 0) rotate(-45deg);
+  transition-delay: 0.22s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  .hamburger--collapse.is-active .hamburger-inner::after {
+    top: 0;
+    opacity: 0;
+    transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0.1s 0.22s linear; }
+  .hamburger--collapse.is-active .hamburger-inner::before {
+    top: 0;
+    transform: rotate(-90deg);
+    transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1); }
+

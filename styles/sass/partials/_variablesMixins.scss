@@ -1,0 +1,19 @@
+// fonts
+$titleFont : 'Montserrat', sans-serif;
+$mainFont : 'Poppins', sans-serif;
+
+$primaryColor : #272b2e;
+$backgroundColor: #D9E4EC;
+$offWhite: #f5f5f5;
+$sectionGrey: #f6f6f6;
+$mistyBlue: #385E72;
+$blueGrotto: #6AABD2;
+$lightBlue: #B7CFDC;
+$blueGray: #080808;
+
+@mixin fontStyles ($fontSize, $fontColor, $fontWeight, $fontFamily) {
+    font-size: $fontSize;
+    color: $fontColor;
+    font-weight: $fontWeight;
+    font-family: $fontFamily;
+}

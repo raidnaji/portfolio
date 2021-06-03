@@ -1,0 +1,104 @@
+@media (max-width: 1030px) {
+    .portfolio {
+        .portfolioImage {
+            min-width: 250px;
+
+            img {
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+@media (max-width: 940px) {
+    .wrapper {
+        width: 85%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .wrapper {
+        width: 90%;
+    }
+    nav.mainNav ul.mainMenu {
+	visibility: collapse;
+}
+    nav.mobileMenu {
+        display: initial;
+    }
+    label[for="toggle"], input[type="checkbox"] {
+        display: block;
+        position: fixed;
+        z-index: 15;
+    }
+    .aboutContainer {
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .aboutImage {
+        min-width: auto;
+        width: 100%;
+
+        img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 0 auto;
+            }
+        }
+        .aboutContainer {
+            .aboutText {
+                width: 96%;
+                padding: 5%;
+            }
+    }
+
+    .portfolio {
+        .portfolioContainer {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            // width: 100%;
+        }
+        .portfolioImage {
+            width: 100%;
+            min-width: 355px;
+            margin: 0 auto;
+
+            img {
+                object-fit: fill;
+                height: auto;
+            }
+        }
+        .portfolioText {
+            width: 100%;
+        }
+    }
+    .portfolioContainer:nth-child(2n + 1) {
+        .portfolioText {
+            order: 1;
+    }
+}
+    
+}
+
+// @media (max-width: 670px) {
+
+// }
+
+@media (max-width: 480px) {
+    .wrapper {
+        width: 95%;
+    }
+
+    .aboutContainer {
+        .aboutText {
+            width: 96%;
+            padding: 5%;
+        }
+    }
+}
