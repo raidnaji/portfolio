@@ -16,7 +16,7 @@ portfolio.init = () => {
 // Typed.js function in header intro 
 portfolio.introHeading = () => {
     let options = {
-        strings: ["", "Front-end Developer", "Personal Finance Enthusiast", "Cat lover"],
+        strings: ["", "Front-end Developer", "Personal finance Enthusiast", "Cat lover"],
         typeSpeed: 50,
         loop: true,
         backDelay: 2000
