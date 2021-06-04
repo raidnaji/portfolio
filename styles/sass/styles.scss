@@ -8,3 +8,11 @@
 @import "partials/portfolio";
 @import "partials/contact";
 @import "partials/mediaQueries";
+@import "partials/footer";
+
+.linkUp {
+  display: block;
+  position: relative;
+  top: -10vh; /* this is your offset */
+  visibility: hidden;
+}
