@@ -32,5 +32,32 @@
             margin: 8px 0;
             padding-bottom: 1%;
         }
+
+        .button {
+            outline: none;
+            color: $offWhite;
+            font-size: 1rem;
+            cursor: pointer;
+            display: block;
+            margin: 1rem 0;
+            background-color: $mistyBlue;
+            text-transform: uppercase;
+            border: 1px solid $mistyBlue;
+            padding: 1rem 1.5rem;
+            border-radius: 1.5rem;
+            margin: 1rem auto;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background-color: $blueGrotto;
+                transform: scale(1.2);
+                outline: none;
+            }
+             &:focus {
+                 background-color: $blueGrotto;
+                 transform: scale(1.2);
+                 outline: 3px solid $mistyBlue;
+             }
+        }
     }
 }
