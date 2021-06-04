@@ -1,19 +1,20 @@
 nav.mainNav {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     background-color: $lightBlue;
     height: 10vh;
     position: fixed;
     min-width: 100vw;
     padding: 1rem 0;
     z-index: 10;
-    // border: 2px solid red;
 }
 
 
 nav.mainNav ul {
     display: flex;
     list-style-type: none;
+    margin-right: 2rem;
 
     li a {
         @include fontStyles(0.9rem, $primaryColor, 700, $mainFont);
@@ -48,7 +49,8 @@ nav.mobileMenu {
   ul {
     font-size: 2rem;
     background-color: $lightBlue;
-    opacity: 0;
+    // opacity: 0;
+    display: none;
     margin-top: 60px;
   }
 
@@ -72,7 +74,8 @@ nav.mobileMenu {
 
 
 input[type="checkbox"]:checked + ul {
-  opacity: 1;
+  // opacity: 1;
+  display: block;
 }
 
 input[type="checkbox"],
@@ -97,6 +100,13 @@ input[type="checkbox"] {
     height: 4rem;
     
     opacity: 0;
+}
+
+.linkUp {
+  display: block;
+  position: relative;
+  top: -10vh; /* this is your offset */
+  visibility: hidden;
 }
 
 

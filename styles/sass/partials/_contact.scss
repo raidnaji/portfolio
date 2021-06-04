@@ -1,0 +1,100 @@
+section.contact {
+    height: 100vh;
+    background-color: $backgroundColor;
+    padding: 5% 0;
+
+    .wrapper {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    h3 {
+        align-self: center;
+    }
+
+    .contactMessage {
+        font-size: 1.2rem;
+    }
+
+    p {
+        margin: 1.2rem auto;
+    }
+
+    .socialIcons {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 30px;
+        margin: 0;
+
+        
+    }
+
+    i {
+        font-size: 3.25rem;
+        color: $mistyBlue;
+        transition: all 0.5s ease;
+
+        &:hover {
+            color: $blueGrotto;
+            transform: scale(1.2)
+        }
+    }
+
+    .formContainer {
+
+        width: 100%;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            width: 100%;
+            align-items: center;
+        }
+    
+        input, textarea {
+            padding: 0.5rem;
+            @include fontStyles(1rem, $primaryColor, 400, $mainFont);
+            border-radius: 7px;
+            border: 1px solid $mistyBlue;
+            margin: 10px 0px;
+            width: 100%;
+            max-width: 700px;
+            resize: none;
+        }  
+
+        textarea {
+            margin-bottom: 5px;
+        }
+        
+        button {
+            outline: none;
+            color: $offWhite;
+            font-size: 1rem;
+            cursor: pointer;
+            display: block;
+            margin: 1rem 0;
+            background-color: $mistyBlue;
+            text-transform: uppercase;
+            border: 1px solid $mistyBlue;
+            padding: 1rem 1.5rem;
+            border-radius: 1.5rem;
+            margin: 1rem auto;
+            transition: all 0.5s ease;
+
+            &:hover {
+                background-color: $blueGrotto;
+                transform: scale(1.2);
+                outline: none;
+            }
+             &:focus {
+                 background-color: $blueGrotto;
+                 transform: scale(1.2);
+                 outline: 3px solid $mistyBlue;
+             }
+        }
+    }
+}

@@ -90,13 +90,9 @@
     
 }
 
-// @media (max-width: 670px) {
-
-// }
-
 @media (max-width: 480px) {
     .wrapper {
-        width: 95%;
+        width: 90%;
     }
 
     .aboutContainer {
@@ -105,4 +101,9 @@
             padding: 5%;
         }
     }
+
+    section.contact {
+        height: 120vh;
+    }
+
 }
