@@ -104,6 +104,27 @@
 
     section.contact {
         height: 120vh;
+
+        p {
+            margin: 1rem auto;
+        }
+
+        .socialIcons {
+            padding: 5px 30px;
+        }
+
+        i {
+            padding: 0;
+        }
+
+        .formContainer {
+            button {
+                padding: 0.75rem 1rem;
+                margin: 0.5rem auto;
+            }
+        }
     }
+
+
 
 }
