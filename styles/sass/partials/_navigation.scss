@@ -52,6 +52,8 @@ nav.mobileMenu {
     // opacity: 0;
     display: none;
     margin-top: 60px;
+    position: fixed;
+    width: 100%;
   }
 
   li {
@@ -84,8 +86,11 @@ label[for="toggle"], nav.mobileMenu {
 }
 
 label[for="toggle"] {
-	position: absolute;
-	top: 10px;
+  display: flex;
+	position: relative;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 	right: 20px;
   color: $mistyBlue;
   font-size: 2.1rem;

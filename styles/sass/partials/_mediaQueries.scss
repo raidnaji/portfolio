@@ -25,13 +25,18 @@
 	visibility: collapse;
 }
     nav.mobileMenu {
-        display: initial;
+        display: flex;
     }
     label[for="toggle"], input[type="checkbox"] {
-        display: block;
-        position: fixed;
         z-index: 15;
     }
+
+    input[type="checkbox"] {
+        display: block;
+        position: fixed;
+    }
+    
+
     .aboutContainer {
         flex-direction: column;
         justify-content: flex-end;
