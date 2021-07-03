@@ -11,6 +11,7 @@ portfolio.init = () => {
     AOS.init();
     portfolio.introHeading();
     portfolio.hamburger();
+    portfolio.uncheckHamburger();
 }
 
 // Typed.js function in header intro 
@@ -28,6 +29,7 @@ portfolio.introHeading = () => {
 portfolio.hamburger = () => {
   const hamburger = document.querySelector(".hamburger");
   const checkbox = document.querySelector("#toggle");
+  
   // On click
   checkbox.addEventListener("change", function() {
     // Toggle class "is-active"
@@ -35,3 +37,12 @@ portfolio.hamburger = () => {
     // Do something else, -> open/close menu
   })
 }
+
+portfolio.uncheckHamburger = () => {
+  $('.scroll').on('click', () => {
+    $('#toggle').prop('checked', false);
+    $('.hamburger').removeClass('is-active');
+  })
+  
+}
+
